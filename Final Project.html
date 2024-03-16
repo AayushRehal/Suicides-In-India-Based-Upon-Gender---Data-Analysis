@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Suicides In India On Gender Basis 2021</title>
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f7f7f7;
+      color: #333;
+      margin: 0;
+      padding: 0;
+    }
+
+    center {
+      padding: 20px;
+      background-color: #fff;
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+      border-radius: 10px;
+      width: 70%;
+      margin: 50px auto;
+    }
+
+    h1 {
+      font-size: 36px;
+      color: #444;
+    }
+
+    hr {
+      border: 1px solid #ccc;
+      margin-top: 10px;
+      margin-bottom: 20px;
+    }
+
+    label {
+      font-size: 18px;
+      color: #555;
+    }
+
+    #ageSelect {
+      padding: 10px;
+      font-size: 16px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      background-color: #fff;
+    }
+
+    #ageContent {
+      margin-top: 20px;
+      text-align: left;
+      padding: 20px;
+      background-color: #fff;
+      box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+      border-radius: 5px;
+    }
+
+    p, p1, p2 {
+      color: #555;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+  <center>
+    <h1 style="font-size:400%;">Suicides In India On Gender Basis 2021</h1>
+    <hr/>
+<div class="row"> 
+<div class="col-lg-3 col-md-3 bg-primary">
+<h3>Total Male Suicides</h3>
+	<span>142885</span>
+</div>
+<div class="col-lg-3 col-md-3 bg-danger">
+<h3>Total Female Suicides</h3>
+	<span>57950</span>
+</div>
+<div class="col-lg-3 col-md-3 bg-success">
+<h3>Total Transgender Suicides</h3>
+	<span>59</span>
+</div>
+<div class="col-lg-3 col-md-3 bg-warning">
+<h3>Total Count Of Suicides</h3>
+	<span>200894</span>
+</div>
+</div>
+<br>
+<div class="row">
+    <label for="ageSelect">Select Age Group:</label>
+    <select id="ageSelect" onchange="showSelectedOption()">
+     <option value="none">None</option>
+      <option value="below18">Below 18 Years</option>
+      <option value="18-29">18-29 Years</option>
+      <option value="30-59">30-59 Years</option>
+      <option value="above60">Above 60 Years</option>
+      <option value="total suicides">Total Suicides</option>
+    </select>
+</div>
+    <div id="ageContent">
+      <!-- Age group content will be displayed here -->
+    </div>
+  </center>
+
+  <script>
+    function showSelectedOption() {
+      var selectBox = document.getElementById("ageSelect");
+      var selectedValue = selectBox.options[selectBox.selectedIndex].value;
+
+      var ageContentDiv = document.getElementById("ageContent");
+
+      ageContentDiv.innerHTML = ""; // Clear previous content
+
+      switch (selectedValue) {
+        case "below18":
+          ageContentDiv.innerHTML = `
+            <p style="font-size:150%;">This graph shows the Suicides Of Male, Female & Transgender Below 18 Years Of Age.</p>
+            <p2 style="font-size:100%;">
+              We often underestimate the challenges that young people face today. The pressure to excel academically, fit in socially, and meet the standards set by society can be incredibly daunting. In the age of social media, where comparisons are constant and cyberbullying can be relentless, the emotional toll on young minds is considerable.It's important to realize that adolescents are still developing emotionally and may not always have the coping mechanisms necessary to navigate these challenges. They might not always reach out for help when they are struggling, and that's where we, as a community, come in. We must foster an environment where young people feel safe and comfortable discussing their feelings, concerns, and fears openly.
+In conclusion, suicides among those below 18 years of age are not just statistics; they represent young lives filled with potential, dreams, and aspirations. We have the power to make a difference through our actions, our words, and our compassion. By creating a supportive and understanding community, we can offer hope to those who need it the most.
+
+            </p2>
+            <img src="C:\\Users\\Aayush Rehal\\Aayush CDAC\\Project Work\\below 18.png" width="800" height="600" alt="image black">
+          `;
+          break;
+
+        case "18-29":
+          ageContentDiv.innerHTML = `
+            <p style="font-size:150%;">This graph shows the Suicides Of Male, Female & Transgender 18-29 Years Of Age.</p>
+            <p2 style="font-size:100%;">
+              Age group in our society - suicides among individuals aged 18 to 29. This period of life is often associated with exploration, self-discovery, and new beginnings. However, for some, it can also be a time of profound challenges that may lead to feelings of despair and hopelessness.
+The transition from adolescence to adulthood is marked by significant changes - leaving home, pursuing higher education or embarking on a career, establishing new relationships, and assuming greater responsibilities. While these changes can be exciting, they can also be overwhelming, bringing with them a myriad of pressures and uncertainties.In this age range, young adults are often faced with academic or career-related stress, financial burdens, and the complexities of forming and maintaining relationships. The pressure to succeed can feel relentless, particularly when combined with the constant comparisons facilitated by social media. This can result in a sense of inadequacy and isolation, exacerbating emotional struggles.
+In conclusion, the age group of 18 to 29 is a critical period in a person's life, characterized by both growth and challenges. By acknowledging the unique struggles faced by young adults and promoting open conversations about mental health, we can work towards reducing the stigma and creating a society where seeking help is seen as a sign of strength. Let us remember that each life in this age group holds immense potential, and by standing together, we can offer hope, support, and a brighter future.
+            </p2>
+            <img src="C:\\Users\\Aayush Rehal\\Aayush CDAC\\Project Work\\18-29.png" width="800" height="600" alt="image black">
+          `;
+          break;
+
+        case "30-59":
+          ageContentDiv.innerHTML = `
+            <p style="font-size:150%;">This graph shows the Suicides Of Male, Female & Transgender 30-59 Years Of Age.</p>
+            <p2 style="font-size:100%;">
+              In the prime of life, between the ages of 30 and 59, lies a stage that is often seen as one of stability, productivity, and achievement. Yet, beneath the surface, many individuals within this age group grapple with challenges that can lead to emotional turmoil and, tragically, thoughts of suicide.
+This is a phase marked by significant responsibilities—career demands, family obligations, financial pressures, and societal expectations. Balancing these commitments can sometimes take a toll on mental well-being. The midlife years can bring unexpected changes, from career shifts to relationship dynamics, and adapting to these changes might not always be easy.As we navigate the intricacies of adulthood, maintaining connections becomes crucial. Building and nurturing relationships can become more complex as time goes on. Social isolation, whether due to relocation, divorce, or other life changes, can exacerbate feelings of loneliness and despair.For friends and family, understanding the signs of distress and offering a non-judgmental space to talk can be life-saving. Recognizing the interconnectedness of mental and physical health, we can promote holistic well-being through healthy lifestyle choices, regular check-ins, and a willingness to ask for assistance when needed.In the end, each life within this age range holds a unique story, potential, and struggles. By addressing the complexities of mental health openly and compassionately, we can work to lower the rates of suicide and create a society where individuals in their prime years find the support they need to navigate life's challenges.
+
+            </p2>
+            <img src="C:\\Users\\Aayush Rehal\\Aayush CDAC\\Project Work\\30-59.png" width="1000" height="600" alt="image black">
+          `;
+          break;
+
+        case "above60":
+          ageContentDiv.innerHTML = `
+            <p style="font-size:150%;">This graph shows the Suicides Of Male, Female & Transgender Above 60 Years Of Age.</p>
+            <p2 style="font-size:100%;">
+              The golden years should ideally be a time of relaxation, reflection, and enjoying the fruits of a lifetime's labor. Yet, for some, these years can be marked by feelings of isolation, loss, and even hopelessness. As we age, we may encounter physical health issues, the passing of loved ones, changes in living situations, and a reduced sense of purpose - all of which can contribute to emotional struggles.Loneliness and social isolation are particularly concerning factors among the elderly population. The loss of a spouse or close friends, combined with limited mobility, can lead to a sense of disconnection from the world. The digital divide can also exacerbate this isolation, as technology becomes an increasingly integral part of daily life, making it challenging for those who aren't as familiar with it.Institutions that cater to the elderly, such as retirement homes and community centers, have a crucial role to play. By providing mental health resources, organizing social events, and facilitating discussions about emotional well-being, they can help combat the loneliness that often plagues the elderly population.Furthermore, families must remain vigilant and supportive. Regular communication, spending quality time, and encouraging open conversations about emotions can make a significant difference in the lives of our elders. They need to know that they are not alone and that their feelings are valid.
+In conclusion, the older years of life should be a time of reflection, wisdom-sharing, and joy. But for some, they bring unique challenges that can lead to emotional distress and, tragically, even suicide. As a society, let us shatter the stigma around mental health in the elderly population. Let us extend our compassion, understanding, and support to ensure that our seniors can live out their later years in happiness, connection, and emotional well-being.
+            </p2>
+            <img src="C:\\Users\\Aayush Rehal\\Aayush CDAC\\Project Work\\60 and above.png" width="800" height="600" alt="image black">
+          `;
+          break;
+
+        case "total suicides":
+          ageContentDiv.innerHTML = `
+            <p style="font-size:150%;">This graph shows the Total Suicides Of Male, Female & Transgender.</p>
+            <p2 style="font-size:100%;">
+              This Is The Plot For All Counts Of Age Of Male, Female & Transgender...In The Above Graph It Is Analyzed That Males Are Suiciding More In Every Age Group & On Overall Count Basis
+            </p2>
+            <img src="C:\\Users\\Aayush Rehal\\Aayush CDAC\\Project Work\\Total suicides.png" width="800" height="600" alt="image black">
+          `;
+          break;
+
+        default:
+          break;
+      }
+    }
+  </script>
+</body>
+</html>
+
